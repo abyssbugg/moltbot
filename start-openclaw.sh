@@ -220,7 +220,7 @@ if (process.env.CF_AI_GATEWAY_MODEL) {
 
     if (baseUrl && apiKey) {
         const api = gwProvider === 'anthropic' ? 'anthropic-messages' : 'openai-completions';
-        const providerName = 'cf-ai-gw-' + gwProvider;
+        const providerName = gwProvider;
 
         config.models = config.models || {};
         config.models.providers = config.models.providers || {};
