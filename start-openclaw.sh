@@ -228,7 +228,7 @@ if (process.env.CF_AI_GATEWAY_MODEL) {
             baseUrl: baseUrl,
             apiKey: apiKey,
             api: api,
-            models: [{ id: modelId, name: modelId, contextWindow: 131072, maxTokens: 8192 }],
+            models: [{ id: modelId, name: modelId, contextWindow: 131072, maxTokens: 8192, reasoning: true, compat: { supportsStore: false } }],
         };
         config.agents = config.agents || {};
         config.agents.defaults = config.agents.defaults || {};
